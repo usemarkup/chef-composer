@@ -1,4 +1,4 @@
-# composer
+# Composer
 
 ### Chef Tested
 
