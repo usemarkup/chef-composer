@@ -1,5 +1,7 @@
 # Composer
 
+[![Build Status](https://travis-ci.org/usemarkup/chef-composer.svg?branch=master)](https://travis-ci.org/usemarkup/chef-composer)
+
 ## Usage
 
 
