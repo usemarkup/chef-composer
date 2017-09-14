@@ -1,7 +1,7 @@
 name 'global-composer'
 license 'MIT Licence'
 description 'an omnibus of packages to ease installing php'
-version '0.1.0'
+version '0.1.1'
 
 maintainer 'Gavin Staniforth'
 maintainer_email 'gavin@usemarkup.com'
