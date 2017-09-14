@@ -1,5 +1,14 @@
 # Composer
 
+## Usage
+
+
+```json
+  "run_list": [
+    "recipe[global-composer]"
+  ]
+```
+
 ### Chef Tested
 
 - Chef 12.7.2
