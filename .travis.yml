@@ -11,8 +11,6 @@ matrix:
       env: suite=centos-69
     - rvm: 2.3
       env: suite=centos-69-chef-12
-    - rvm: 2.3
-      env: suite=centos-68
 
 sudo: required
 services: docker
