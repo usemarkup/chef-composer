@@ -5,7 +5,7 @@ execute 'Composer Install' do
 end
 
 execute 'Composer Update' do
-  command 'composer self-update'
+  command '/usr/local/bin/composer self-update'
   action :run
   not_if { node['composer']['key'] == false }
 end
