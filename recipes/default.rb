@@ -25,7 +25,7 @@ end
 if node['composer']['key']['token'] && node['composer']['key']['users']
   node['composer']['key']['users'].each do |user|
     execute 'Add Deployment Key' do
-      command "su #{user} -c 'composer config github-oauth.github.com --global \"#{node['composer']['key']['token']}\"'"
+      command "su #{user} -c '/usr/local/bin/composer config github-oauth.github.com --global \"#{node['composer']['key']['token']}\"'"
       action :run
       not_if { node['composer']['key']['token'].nil? }
     end
