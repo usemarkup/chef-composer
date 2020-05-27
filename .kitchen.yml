@@ -5,7 +5,17 @@ driver:
   use_sudo: false
 
 platforms:
-  - name: centos-7
+  - name: centos-7-chef-14
+    driver_config:
+      image: centos/systemd
+      run_command: /usr/sbin/init
+      privileged: true
+      provision_command:
+        - sed -i 's/UsePAM yes/UsePAM no/g' /etc/ssh/sshd_config
+        - systemctl enable sshd.service
+        - yum install php-cli net-tools -y && curl -LO https://omnitruck.chef.io/install.sh && sudo bash ./install.sh -v 14 && rm install.sh
+
+  - name: centos-7-chef-13
     driver_config:
       image: centos/systemd
       run_command: /usr/sbin/init

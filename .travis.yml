@@ -4,11 +4,15 @@ dist: trusty
 matrix:
   include:
     - rvm: 2.3
-      env: suite=centos-7
+      env: suite=centos-7-chef-14
+    - rvm: 2.3
+      env: suite=centos-7-chef-13
     - rvm: 2.3
       env: suite=centos-7-chef-12
     - rvm: 2.3
-      env: suite=centos-69
+      env: suite=centos-69-chef-14
+    - rvm: 2.3
+      env: suite=centos-69-chef-13
     - rvm: 2.3
       env: suite=centos-69-chef-12
 
